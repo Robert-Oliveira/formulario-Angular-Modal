@@ -1,0 +1,25 @@
+{
+  "roteiros": [
+    {
+      "id": 1,
+      "local": "MASP",
+      "endereco": "Av. Paulista, 1578 - Bela Vista, São Paulo - SP, 01310-200",
+      "descricao": "Um dos maiores símbolos da arquitetura moderna, o Museu de Arte de São Paulo é tido como um dos marcos de São Paulo, conhecido no país inteiro e ao redor do mundo. Essa é só um pouco da história do MASP, que tem muito mais a ser contado. ",
+      "funcionamento": "Todas as terças das 10 as 20hs"
+    },
+    {
+      "id": 2,
+      "local": "dsdas",
+      "endereco": "dsada",
+      "descricao": "dssda",
+      "funcionamento": "dsdsa"
+    },
+    {
+      "id": 3,
+      "local": "dsdaseds",
+      "endereco": "dsadafds",
+      "descricao": "dssda",
+      "funcionamento": "dsdsafdsf"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+.titulo {
+  text-align: center;
+  font-size: 59px;
+  padding: 7%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mat-card {
+  box-shadow: none;
+}
+.mat-card-image {
+  display: flex;
+  width: 800px;
+  height: 430px;
+}
+mat-card-content {
+  width: 1140px;
+  height: 258px;
+  padding: 5%;
+  font-size: 24px;
+  line-height: 28.13px;
+}

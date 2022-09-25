@@ -1,0 +1,106 @@
+<app-header></app-header>
+
+<mat-card>
+  <mat-card-title class="titulo"> Roteiro </mat-card-title>
+</mat-card>
+
+<mat-card class="input-container">
+  <mat-card-content id="cardCentral">
+    <form
+      [formGroup]="form"
+      class="example-form"
+      (submit)="salvarDadosRoteiro()"
+    >
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Local</mat-label>
+        <input
+          type="text"
+          matInput
+          formControlName="local"
+          name="local"
+          required
+        />
+      </mat-form-field>
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Endereço</mat-label>
+        <input
+          type="text"
+          matInput
+          formControlName="endereco"
+          name="endereco"
+          required
+        />
+      </mat-form-field>
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Descrição</mat-label>
+        <input
+          type="text"
+          matInput
+          formControlName="descricao"
+          name="descricao"
+          required
+        />
+      </mat-form-field>
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Funcionamento</mat-label>
+        <input
+          type="text"
+          matInput
+          formControlName="funcionamento"
+          name="funcionamento"
+          required
+        />
+      </mat-form-field>
+
+      <button
+        mat-flat-button
+        class="cadastrar"
+        mat-flat-button
+        type="submit"
+        [disabled]="!form.valid"
+      >
+        Cadastrar
+      </button>
+    </form>
+  </mat-card-content>
+</mat-card>
+
+<mat-card class="example-card" *ngFor="let roteiro of roteiros">
+  <mat-card-title-group>
+    <mat-card-title class="titulo-card">{{ roteiro.local }}</mat-card-title>
+    <mat-card-content class="texto-card">
+      {{ roteiro.descricao }}
+      <div>
+        <button
+          mat-flat-button
+          class="editar"
+          mat-flat-button
+          (click)="editarRoteiro(roteiro.id)"
+        >
+          Editar
+        </button>
+        <button
+          mat-flat-button
+          class="excluir"
+          mat-flat-button
+          (click)="deletarRoteiro(roteiro.id)"
+        >
+          Excluir
+        </button>
+      </div>
+      <div>
+        <button
+          class="saiba-mais"
+          mat-flat-button
+          mat-flat-button
+          type="submit"
+          (click)="openDialog(roteiro.id)"
+        >
+          Saiba Mais
+        </button>
+      </div>
+    </mat-card-content>
+  </mat-card-title-group>
+</mat-card>
+
+<app-footer></app-footer>

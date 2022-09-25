@@ -1,0 +1,103 @@
+.titulo {
+  text-align: center;
+  font-size: 59px;
+  padding: 7%;
+}
+
+.mat-card {
+  box-shadow: none;
+  background-color: #f3f3f3;
+}
+mat-card-content {
+  margin-left: 50%;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  margin-right: 35%;
+  padding-top: 2%;
+}
+mat-form-field {
+  width: 1040px;
+}
+.cadastrar {
+  width: 248px;
+  height: 45px;
+  border-radius: 16px;
+  background-color: #f3f3f3;
+  border: 2px solid #416afb;
+  font-size: 30px;
+}
+// mat-card-title-group {
+//   display: flex;
+
+//   align-items: flex-end;
+// }
+.example-card {
+  margin-bottom: 8px;
+  margin-top: 5%;
+  margin-left: 12%;
+  width: 1100px;
+}
+
+.titulo-card {
+  width: 324px;
+  height: 326px;
+  background-color: #4776e6;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.texto-card {
+  width: 710px;
+  height: 203px;
+  margin-left: auto;
+  font-size: 28px;
+  line-height: 32.81px;
+  padding-top: 2%;
+}
+.editar {
+  width: 157px;
+  height: 40px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  background: #f3f3f3;
+  border: 2px solid #416afb;
+  border-radius: 16px;
+}
+.excluir {
+  width: 157px;
+  height: 40px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+  background: #416afb;
+  border: 2px solid #416afb;
+  border-radius: 16px;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+.saiba-mais {
+  width: 223px;
+  height: 40px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  background: #f3f3f3;
+  border: 2px solid #416afb;
+  border-radius: 16px;
+  margin-top: 4%;
+  margin-left: 60%;
+}
